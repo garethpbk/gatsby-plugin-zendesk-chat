@@ -1,7 +1,7 @@
 const React = require('react')
 
 exports.onRenderBody = (
-  { setHeadComponents },
+  { setPostBodyComponents },
   { zendeskKey, enableDuringDevelop = true },
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
@@ -18,7 +18,7 @@ exports.onRenderBody = (
     return null
   }
 
-  return setHeadComponents([
+  return setPostBodyComponents([
     <script
       id="ze-snippet"
       key="gatsby-plugin-zendesk-chat"
