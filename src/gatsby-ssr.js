@@ -23,6 +23,7 @@ exports.onRenderBody = (
       id="ze-snippet"
       key="gatsby-plugin-zendesk-chat"
       src={`https://static.zdassets.com/ekr/snippet.js?key=${zendeskKey}`}
+      async
     />,
   ])
 }
